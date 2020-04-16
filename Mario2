@@ -1,0 +1,36 @@
+#include <cs50.h>
+#include <stdio.h>
+
+int main(void)
+{
+int h;
+
+do
+{
+    h=get_int("Pyramid's height: ");
+}
+while(h<1 || h>8);
+
+
+for (int i=1; i<=h; i++)
+{
+    for (int ii=1; ii<=h; ii++)
+    {
+        if (ii<=h-i)
+        { printf (" ");
+        }
+        else
+        { printf("#");
+        }
+      
+            }
+        printf("  ");
+
+        for (int ii=1; ii<=i; ii++)
+        {    
+        printf("#");
+        }
+       
+        printf("\n");
+    }
+}
